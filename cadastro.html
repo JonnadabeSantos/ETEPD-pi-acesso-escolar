@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .logo-etepd {
+            width: 200px;
+            height: 100px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10%;
+        }
+
+        .nav_header {
+            display: flex;
+            flex-direction: row;
+            gap: 45px;
+
+
+
+        }
+
+        .header {
+            
+            height: 136px;
+            justify-content: space-between;
+            padding: 0 7%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+
+        }
+        .nav_header a:hover{
+            background-color: #0a5e73;
+            color: white;
+            border-radius: 10px;
+        }
+
+    
+
+        .nav_header a {
+            text-decoration: none;
+            color: #0a5e73;
+            font-weight: bold;
+            width: 120px;
+            height: 50px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+            border-radius: 10%;
+            
+            /*border-top: none;
+            border-radius: 0 0 30% 30%;
+            border-style: double;
+            transition: 0.5s;
+            background-size: 200% auto;
+           */
+            
+
+        }
+
+        .img_back {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .img_row {
+            margin-right: 70px;
+        }
+
+        .box {
+            width: 600px;
+            height: 600px;
+            border-style: double;
+            border-width: 10px;
+            border-radius: 10%;
+            margin-left: 15%;
+            border-color: #0a5e73;
+            box-shadow: rgba(10, 94, 115, 0.8) 5px 5px, rgba(10, 94, 115, 0.6) 10px 10px, rgba(10, 94, 115, 0.4) 15px 15px, rgba(10, 94, 115, 0.2) 20px 20px, rgba(10, 94, 115, 0.05) 25px 25px;
+
+        }
+
+        .backcolor {
+            background-color: var(--color-white);
+            width: 348px;
+            height: 348px;
+            border-radius: 10%;
+
+
+        }
+
+        .backcolor h1 {
+            display: flex;
+            justify-content: center;
+            color: var(--color-backHeader);
+            font-size: 60px;
+            color: #0a5e73;
+        }
+
+        .backcolor {
+            display: grid;
+            padding: 21%;
+            align-items: center;
+        }
+
+        .inputt {
+            display: grid;
+        }
+
+        .inputt .nom {
+            width: 350px;
+            height: 51px;
+            margin-bottom: 10px;
+            font-size: 23px;
+            padding-left: 10px;
+            border-radius: 10px;
+            border: 1px solid;
+        }
+
+        .link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px
+        }
+
+        .link a {
+            text-decoration: none;
+            color: black;
+            font-size: 22px;
+            margin-left: 40px;
+        }
+
+        p {
+            color: black;
+
+        }
+
+        p a {
+            color: var(--color-hover);
+            text-decoration: none;
+        }
+
+        .link input {
+
+            width: 171px;
+            height: 53px;
+            border-radius: 10px;
+            border: 1px solid;
+
+
+        }
+
+        .btn {
+
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+
+
+        }
+
+        .cad {
+            margin-top: 10px;
+            display: flex;
+            justify-content: end;
+        }
+
+        .social img {
+            width: 50px;
+        }
+
+        .btn:hover {
+            background-position: right center;
+            border-color: white;
+            color: black;
+            /* change the direction of the change here */
+        }
+
+        .btn-1 {
+            
+            
+            background-image: linear-gradient(to right, #0a5e73 50%, #ffcf7e 55%, #ffcf7e 100%);
+        }
+
+      
+
+        .custon-input {
+            width: 100%;
+            height: 40px;
+
+
+        }
+
+        .custon-input input {
+            display: block;
+            width: 350px;
+            height: 51px;
+            font-size: 17px;
+            border: 1.5px solid var(--color-white);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+
+
+        }
+
+        .custon-input input:focus~label,
+        .custon-input input:valid~label {
+            transform: translateY(-30px);
+            font-size: 19px;
+            color: var(--color-hover);
+
+        }
+
+
+        .custon-input label {
+            position: absolute;
+            margin-top: -40px;
+            margin-left: 10px;
+            background-color: white;
+            color: black;
+            font-size: 20px;
+            transition: all 0.7s ease;
+
+        }
+        .logo_header{
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header" id="header">
+        <div class="logo_header">
+            <img class="logo-etepd" src="Front - End/Desktop/login/image 1.png" alt="logo-etepd">
+        </div>
+        <div class="nav_header">
+            <a href="">SOBRE NOS</a>
+            <a href="">AGENDA</a>
+            <a href="">CONTATOS</a>
+            <a href="">FAQ</a>
+        </div>
+
+    </div>
+    <div class="img_back">
+        <div class="box">
+            <div class="backcolor">
+                <h1>cadastro</h1>
+                <div class="inputt">
+                    <form action="#">
+                        <div class="custon-input">
+                            <input type="text" required>
+
+                            <label for="">Usuário</label>
+
+                        </div>
+                        <br><br>
+                        <div class="custon-input">
+                            <input type="password" required>
+
+                            <label for="">Senha</label>
+
+                        </div>
+
+
+                        <div class="link">
+                            <a href="#">← voltar</a>
+
+                            <input class="btn btn-1" type="submit" value="proximo">
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <img class="img_row" src="Front - End/Desktop/cadastro/img-cadastro.png" alt="backbody">
+</body>
+
+</html>

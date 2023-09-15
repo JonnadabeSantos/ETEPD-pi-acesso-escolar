@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <style>
+        :root {
+            --color-white: #fff;
+            --color-backHeader: #0a5e73;
+            --color-hover: #ffcf7e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: var(--color-white);
+            background-image: url("background-perfil-desktop.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+
+
+        .logo-etepd {
+            width: 200px;
+            height: 100px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10%;
+        }
+
+        .nav_header {
+
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 44px;
+
+
+
+
+
+        }
+
+        .header {
+            background-image: url("bar-top-desktop.svg");
+            height: 136px;
+            justify-content: space-between;
+            padding: 0 7%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+
+        }
+
+        .nav_header a:hover {
+            background-color: #0a5e73;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .nav_header {
+            gap: 45px;
+        }
+
+        .nav_header a {
+            text-decoration: none;
+            color: #0a5e73;
+            font-weight: bold;
+            width: 120px;
+            height: 50px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+            border-radius: 10%;
+
+            /*border-top: none;
+            border-radius: 0 0 30% 30%;
+            border-style: double;
+            transition: 0.5s;
+            background-size: 200% auto;
+           */
+
+
+        }
+
+        .logo_header {
+            display: flex;
+            align-items: center;
+            /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
+            margin-bottom: 21px;
+        }
+
+        .imgPag {
+            width: 1150px;
+            height: 700px;
+            display: flex;
+            justify-content: end;
+            opacity: 70%;
+            display: flex;
+            margin-left: 40vw;
+        }
+
+        .Principal {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            position: absolute;
+            z-index: -3;
+        }
+
+        .imgperfil {
+            width: 700px;
+            height: 560px;
+
+        }
+
+        .form-perfil {
+            color: black;
+        }
+
+        .row-form p {
+            color: #0a5e73;
+            background-color: #fff;
+            width: 400px;
+            height: 60px;
+            border: 1px solid #0a5e73;
+            border-radius: 30px;
+            padding-left: 30px;
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            font-size: 22px;
+            margin: 35px;
+
+        }
+        .row-form{
+            display: flex;
+            justify-content: end;
+        }
+
+        .row-form .lugar {
+            display: flex;
+        }
+        .lugar{
+            margin: 0px;
+        }
+
+        .lugar p {
+            width: 170px;
+            margin-top: 0;
+            margin-left: 35px;
+            
+            
+        }
+
+        .cl-01{
+            margin-top: 147px;
+            margin-right: 60px;
+        }
+        #nome{
+            width: 44vw;
+        }
+        #Turma{
+            margin-left: 0px;
+        }
+        #email{
+            width: 30vw;
+        }
+        footer{
+            margin-top: 18vh;
+        }
+        .logoT{
+            font-size: 40px;
+            display: flex;
+            position: absolute;
+            color: #ffcf7e;
+            font-weight: bold;
+            margin: 31px 41%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header" id="header">
+        <div class="logo_header">
+            <img class="logo-etepd" src="Front - End/Desktop/login/image 1.png" alt="logo-etepd">
+        </div>
+        <div class="nav_header">
+            <a href="">SOBRE NOS</a>
+            <a href="">AGENDA</a>
+            <a href="">CONTATOS</a>
+            <a href="">FAQ</a>
+        </div>
+
+    </div>
+
+    <div class="Principal">
+        
+        <img class="imgPag" src="bar-principal-desktop.svg" alt="">
+    </div>
+
+    <div class="row-form">
+        <div class=" cl-01">
+
+            <label for="nome"></label>
+            <p class="form-perfil" id=nome> Nome </p>
+            <label for="email"></label>
+            <p class="Email" id="email"> E-mail</p>
+            <label for="cpf"></label>
+            <p class="Cpf" id="cpf"> CPF</p>
+            <label for="Turno"></label>
+            <div class="lugar">
+                <p class="turno" id="Turno"> Turno</p>
+                <label for="Turma"></label>
+                <p class="turma" id="Turma">Turma</p>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <p class="logoT"> ETE - PORTO DIGITAL</p>
+        <img src="Front - End/Desktop/perfil/bar-bottom-perfil-desktop.svg" alt="">
+    </footer>
+</body>
+
+</html>
