@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --color-white: #fff;
+            --color-backHeader: #0a5e73;
+            --color-hover: #ffcf7e;
+        }
+
+        body {
+            overflow-y: hidden;
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .link {
+            margin-top: 15%;
+            display: flex;
+            align-items: center;
+            padding-left: 10%;
+
+        }
+
+        .link a {
+            text-decoration: none;
+            color: black;
+            font-size: 22px;
+            margin-left: 12%;
+
+            margin-right: 16%;
+        }
+
+
+        .link input {
+
+            width: 171px;
+            height: 53px;
+            border-radius: 10px;
+            border: 1px solid;
+
+
+        }
+
+        .btn {
+
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+
+
+        }
+
+
+
+        .btn:hover {
+            background-position: right center;
+            border-color: white;
+            color: black;
+            /* change the direction of the change here */
+        }
+
+        .btn-1 {
+
+
+            background-image: linear-gradient(to right, #0a5e73 50%, #ffcf7e 55%, #ffcf7e 100%);
+        }
+
+
+
+        .custon-input {
+            width: 100%;
+            height: 40px;
+
+
+        }
+
+        .custon-input input {
+            display: block;
+            margin-top: 10%;
+            width: 550px;
+            height: 51px;
+            font-size: 17px;
+            border: 1.5px solid var(--color-white);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+            padding-left: 5%;
+            padding-right: 5%;
+            outline: none;
+
+
+        }
+
+        .custon-input input:focus~label,
+        .custon-input input:valid~label {
+            transform: translateY(-30px);
+            font-size: 16px;
+            color: var(--color-hover);
+
+        }
+
+
+        .custon-input label {
+            position: absolute;
+            margin-top: -40px;
+            margin-left: 10px;
+            background-color: white;
+            color: black;
+            font-size: 20px;
+            transition: all 0.7s ease;
+            margin-left: 5%;
+
+        }
+    </style>
+    
+    </script>
+</head>
+
+<body>
+    <form action="form2.html">
+        <div class="custon-input">
+            <input type="text" required>
+
+            <label for="">EMAIL</label>
+
+        </div>
+
+        <div class="custon-input">
+            <input type="password" required>
+
+            <label for="">CONFIRMAR SENHA</label>
+
+        </div>
+
+        <div class="custon-input">
+            <input type="password" required>
+
+            <label for="">CONFIRMAR SENHA</label>
+
+        </div>
+
+
+        <div class="link">
+
+            <input class="btn btn-1" type="submit" value="CADASTRAR">
+            <a href="form.html">← VOLTAR</a>
+        </div>
+</body>
+
+</html>
