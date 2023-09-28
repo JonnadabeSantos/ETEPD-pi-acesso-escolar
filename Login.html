@@ -17,7 +17,7 @@
         * {
             margin: 0;
             padding: 0;
-            
+
         }
 
         body {
@@ -33,16 +33,16 @@
         .logo-etepd {
             width: 200px;
             height: 100px;
-            
+
             border-radius: 10%;
         }
 
         .nav_header {
-            
+
             display: flex;
             flex-direction: row;
             margin-bottom: 44px;
-            
+
 
 
 
@@ -60,7 +60,8 @@
 
 
         }
-        .nav_header a:hover{
+
+        .nav_header a:hover {
             background-color: #0a5e73;
             color: white;
             border-radius: 10px;
@@ -68,6 +69,15 @@
 
         .nav_header {
             gap: 45px;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            text-decoration: none;
+            list-style: none;
         }
 
         .nav_header a {
@@ -79,16 +89,16 @@
             align-items: center;
             display: flex;
             justify-content: center;
-            
+
             border-radius: 10%;
-            
+
             /*border-top: none;
             border-radius: 0 0 30% 30%;
             border-style: double;
             transition: 0.5s;
             background-size: 200% auto;
            */
-            
+
 
         }
 
@@ -139,7 +149,7 @@
             border-width: 10px;
             border-radius: 10%;
             border-color: #ddd;
-            
+
         }
 
         .backcolor {
@@ -156,7 +166,7 @@
             justify-content: center;
             color: var(--color-backHeader);
             font-size: 60px;
-            
+
         }
 
         .backcolor {
@@ -292,21 +302,143 @@
             /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
             margin-bottom: 21px;
         }
+
+        .menu {
+            display: none;
+        }
+        #chec{
+            display: none;
+        }
+
+        @media (max-width: 450px) {
+
+            .header {
+                background-image: url("Front-End/Smatphone/login/bar-top.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .logo-etepd {
+                width: 80px;
+                height: 60px;
+            }
+
+
+            .container {
+                width: 29vw;
+                height: 68vh;
+            }
+
+            .backcolor {
+                padding: 2%;
+                width: 316px;
+                height: 96%;
+            }
+
+            .box {
+                display: flex;
+                margin-left: 250%;
+                height: 57%;
+            }
+
+            .custon-input input {
+                width: 300px;
+
+            }
+
+            .footer {
+                background-image: url("Front-End/Smatphone/login/bar-bottom.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 1%;
+            }
+
+            .social {
+                display: flex;
+                justify-content: center;
+
+                gap: 50px;
+            }
+
+            .backcolor h1 {
+                display: flex;
+                justify-content: center;
+                color: var(--color-backHeader);
+                font-size: 36px;
+            }
+
+            .social img {
+                width: 40px;
+            }
+
+            .menu {
+                display: flex;
+                width: 30px;
+                position: absolute;
+                z-index: 1;
+                margin-top: -20px;
+                background-color: #fff;
+            }
+
+            
+            .nav_header {
+                    display: flex;
+                    background-color: #0a5e73;
+                    width: 200px;
+                    height: 90%;
+                    position: absolute;
+                    padding-top: 20%;
+                    margin-top: 180%;
+                    margin-left: 38%;
+                    justify-content: center;
+                    top: -188vh;
+                }
+            
+
+            .nav_header a {
+                color: #fff;
+                
+            }
+
+            ul {
+                display: block;
+            }
+
+            li:hover {
+                background-color: #0a5e73ce;
+            }
+            .menu-label{
+                position: absolute;
+                margin-left: 78%;
+                background-color: white;
+            }
+            input[type="checkbox"]:checked ~ nav{
+                transform: translateY(100.4vh);
+            }
+            
+        }
     </style>
 </head>
 
 <body>
     <div class="header" id="header">
         <div class="logo_header">
-            <img class="logo-etepd" src="Front - End/Desktop/login/image 1.png" alt="logo-etepd">
+            <img class="logo-etepd" src="Front-End/Desktop/login/image 1.png" alt="logo-etepd">
         </div>
-        <div class="nav_header">
-            <a href="">SOBRE NOS</a>
-            <a href="">AGENDA</a>
-            <a href="">CONTATOS</a>
-            <a href="">FAQ</a>
-        </div>
-        
+        <input type="checkbox" id="chec">
+        <label class="menu-label" for="chec">
+            <img class="menu" src="menu-aberto.png" alt="">
+        </label>
+        <nav class="nav_header">
+            <ul>
+                <li><a href="">SOBRE NOS</a></li>
+                <li><a href="">AGENDA</a></li>
+                <li><a href="">CONTATOS</a></li>
+                <li><a href="">FAQ</a></li>
+
+            </ul>
+        </nav>
+
 
     </div>
     <div class="container">
@@ -356,9 +488,9 @@
 
     <div class="footer">
         <div class="social">
-            <a href="#"><img src="Front - End/Redes/rede-fb.svg"></a>
-            <a href="#"><img src="Front - End/Redes/rede-instagram.svg"></a>
-            <a href="#"><img src="Front - End/Redes/rede-link-02.svg"></a>
+            <a href="#"><img src="Front-End/Redes/rede-fb.svg"></a>
+            <a href="#"><img src="Front-End/Redes/rede-instagram.svg"></a>
+            <a href="#"><img src="Front-End/Redes/rede-link-02.svg"></a>
 
 
         </div>
